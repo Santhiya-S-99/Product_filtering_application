@@ -1,0 +1,35 @@
+<div class="container-fluid">
+  <h1 style="text-align:center;">Product List</h1>
+  <div style="text-align:left;">
+    <select class="form-select " [(ngModel)]="selectedCategory">
+      <option class="option" value="">All Categories</option>
+      <option *ngFor="let category of categories" [value]="category">{{ category }}</option>
+    </select>
+  </div>
+  <table class="table table-bordered table-striped">
+    <thead>
+      <tr>
+        <th class="table1_width">Product Id</th>
+        <th class="table_width">Product Name</th>
+        <th class="table_width">Description</th>
+        <th class="table_width">Category Id</th>
+        <th class="table_width">Category Name</th>
+        <th class="table1_width">In Stock</th>
+        <th class="table1_width">Quantity</th>
+        <th class="table1_width">Price</th>
+      </tr>
+    </thead>
+    <tbody style="text-align: left;">
+      <tr *ngFor="let product of filteredProducts;">
+        <td style="padding:20px;">{{ product.product_id }}</td>
+        <td style="padding:20px;">{{ product.product_name }}</td>
+        <td style="padding:20px;">{{ product.description }}</td>
+        <td style="padding:20px;">{{ product.category_id }}</td>
+        <td style="padding:20px;">{{ product.category_name }}</td>
+        <td style="padding:20px;">{{ product.in_stock }}</td>
+        <td style="padding:20px;">{{ product.quantity }}</td>
+        <td style="padding:20px;">{{ product.price }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

@@ -1,0 +1,113 @@
+.container-fluid {
+    margin: 20px;
+    font-size: 20px;
+}
+.form-select {
+    padding:10px;
+    width:20.5%;
+    border-radius: 5px;
+    background-color: #fff;
+    margin-bottom: 1%;
+}
+.table_width {
+    width:15%;
+    padding: 20px;
+}
+.table1_width {
+    width:5%;
+    padding: 20px;
+}
+.tbody {
+    padding:20px;
+}
+.btn {
+    border: none;
+    background-color: #000aff;
+    margin-bottom: 2%;
+}
+.table-striped tbody tr:nth-of-type(even) {
+    background-color: #e1eff385;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: #fbfcfd;
+}
+
+.table-bordered thead tr {
+    background-color: #e1eff385;
+    color: #000aff;
+}
+
+
+.table>tbody>tr>td {
+    border-top: none;
+}
+
+.table>thead>tr>th {
+    border-bottom: none;
+}
+
+.table-bordered>thead>tr>th {
+    border: none;
+}
+
+.table-bordered>tbody>tr>td {
+    border: none;
+}
+
+.table-bordered {
+    border: none;
+}
+
+/* mobile view  */
+@media only screen and (max-width:500px){
+    .container-fluid {
+        font-size: 15px;
+    }
+    .form-select {
+        padding:10px;
+        width:100%;
+        border-radius: 5px;
+        background-color: #fff;
+        margin-bottom: 5%;
+    }
+    .option {
+        width: 50px; 
+      }
+    .table_width {
+        width:10%;
+        padding: 5px;
+    }
+    .table1_width {
+        width:2%;
+        padding: 5px;
+    }
+    .tbody {
+        padding:20px;
+    }
+}
+
+@media only screen and (min-width: 550px) and (max-width:890px) {
+    .container-fluid {
+        font-size: 15px;
+    }
+    .form-select {
+        width: 35%;
+        padding:10px;
+        border-radius: 5px;
+        background-color: #fff;
+        margin-bottom: 1%;
+    }
+}
+
+@media only screen and (min-width: 810px) and (max-width:2000px) {
+    .container-fluid {
+        font-size: 15px;
+    }
+    .form-select {
+        padding:10px;
+        border-radius: 5px;
+        background-color: #fff;
+        margin-bottom: 1%;
+    }
+}
