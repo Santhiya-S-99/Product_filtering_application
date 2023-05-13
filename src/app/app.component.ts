@@ -8,7 +8,6 @@ import { Product } from './product.model';
 })
 export class AppComponent {
   title = 'product-filtering';
-
   products: Product[] = [
     { id: 1, 
       product_name: 'Hockey Stick', 
